@@ -155,6 +155,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AtualizarLivro.cpp" />
+    <ClCompile Include="AtualizarLivroAction.cpp" />
     <ClCompile Include="BibliotecaJP.cpp" />
     <ClCompile Include="ContextoLivroAcao.cpp" />
     <ClCompile Include="ExportarLivros.cpp" />
@@ -169,6 +170,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AtualizarLivro.h" />
+    <ClInclude Include="AtualizarLivroAction.h" />
     <ClInclude Include="ContextoLivroAcao.h" />
     <ClInclude Include="ExportarLivros.h" />
     <ClInclude Include="InserirLivro.h" />

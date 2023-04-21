@@ -31,7 +31,7 @@ namespace BibliotecaLivros
         std::cout << "Digite o formato do livro: ";
         std::getline(std::cin, formato);
 
-        std::cout << "Digite o ano de publicação do livro: ";
+        std::cout << "Digite o ano de publicacao do livro: ";
         std::cin >> ano;
     }
 
@@ -55,19 +55,20 @@ namespace BibliotecaLivros
         //int ultimoElemento = sizeof(colecaoLivros) / sizeof (colecaoLivros[0]);
         
         colecaoLivros[posicao] = *this->recuperaLivro();
-
-        std::cout << "imprimindo valores apos inclusao" << std::endl;
-        for (int i =0; i < posicao+1; i++)
-        {
-            std::cout << colecaoLivros[i].getIsbn() << std:: endl;
-            std::cout << colecaoLivros[i].getAutor() << std:: endl;
-            std::cout << colecaoLivros[i].getEditora() << std:: endl;
-            std::cout << colecaoLivros[i].getCategoria()<< std:: endl;
-            std::cout << colecaoLivros[i].getFormato() << std:: endl;
-            std::cout << colecaoLivros[i].getAno() << std:: endl;
-        }
         posicao++;
-        std:: cout << "posicao da colecao  " <<  posicao << std:: endl;
+
+        // std::cout << "imprimindo valores apos inclusao" << std::endl;
+        // for (int i =0; i < posicao+1; i++)
+        // {
+        //     std::cout << colecaoLivros[i].getIsbn() << std:: endl;
+        //     std::cout << colecaoLivros[i].getAutor() << std:: endl;
+        //     std::cout << colecaoLivros[i].getEditora() << std:: endl;
+        //     std::cout << colecaoLivros[i].getCategoria()<< std:: endl;
+        //     std::cout << colecaoLivros[i].getFormato() << std:: endl;
+        //     std::cout << colecaoLivros[i].getAno() << std:: endl;
+        // }
+        // posicao++;
+        // std:: cout << "posicao da colecao  " <<  posicao << std:: endl;
     }
 
     Livro* InserirLivroAction::acao(vector<Livro>& colecaoLivros)

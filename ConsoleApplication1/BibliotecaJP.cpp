@@ -7,6 +7,7 @@
 #include "PesquisarLivro.h"
 #include "MostrarLivros.h"
 #include "AtualizarLivro.h"
+#include "AtualizarLivroAction.h"
 #include "ExportarLivros.h"
 #include "ContextoLivroAcao.h"
 #include "InserirLivroAction.h"
@@ -17,6 +18,19 @@
 using namespace std;
 using namespace BibliotecaLivros;
 
+
+void exibeMenuOpcoes()
+{
+    std::cout << std::endl;
+    std::cout << "Escolha uma opção:" << std::endl;
+    std::cout << "1 - Inserir livro" << std::endl;
+    std::cout << "2 - Pesquisar livro" << std::endl;
+    std::cout << "3 - Mostrar dados de todos os livros" << std::endl;
+    std::cout << "4 - Atualizar dados de um livro" << std::endl;
+    std::cout << "5 - Exportar dados dos livros para um arquivo" << std::endl;
+    std::cout << "6 - Sair" << std::endl;
+    std::cout << "Opcao escolhida: " << std::endl;
+}
 
 int main()
 {
@@ -83,15 +97,7 @@ int main()
     // while (opcao != 0);
 
 
-    std::cout << std::endl;
-    std::cout << "Escolha uma opção:" << std::endl;
-    std::cout << "1 - Inserir livro" << std::endl;
-    std::cout << "2 - Pesquisar livro" << std::endl;
-    std::cout << "3 - Mostrar todos os livros" << std::endl;
-    std::cout << "4 - Atualizar informações de um livro" << std::endl;
-    std::cout << "5 - Exportar dados dos livros para um arquivo" << std::endl;
-    std::cout << "0 - Sair" << std::endl;
-    std::cout << "Opção escolhida: " << std::endl;
+    exibeMenuOpcoes();
 
     // inicializa o controlador de contexto de ação de livros
     ContextoLivroAcao* acaoContext = new ContextoLivroAcao();
@@ -112,30 +118,30 @@ int main()
             acaoContext->setLivroAcao(new MostrarLivrosAction());
             acaoContext->executaLivroAction(colecaoLivros, posicao);
             break;
+        case 4:
+            acaoContext->setLivroAcao(new AtualizarLivroAction());
+            acaoContext->executaLivroAction(colecaoLivros, posicao);
+            break;
+        case 6:
+            return 0;
         }
 
-        std::cout << std::endl;
-        std::cout << "Escolha uma opção:" << std::endl;
-        std::cout << "1 - Inserir livro" << std::endl;
-        std::cout << "2 - Pesquisar livro" << std::endl;
-        std::cout << "3 - Mostrar todos os livros" << std::endl;
-        std::cout << "4 - Atualizar informações de um livro" << std::endl;
-        std::cout << "5 - Exportar dados dos livros para um arquivo" << std::endl;
-        std::cout << "0 - Sair" << std::endl;
-        std::cout << "Opção escolhida: " << std::endl;
+        exibeMenuOpcoes();
+
+
         /*cin.clear();
         cin.ignore();
         cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');*/
     }
 
 
-    int tamanhoColecaoLivros = sizeof(colecaoLivros) / sizeof (colecaoLivros[0]);
+    /*int tamanhoColecaoLivros = sizeof(colecaoLivros) / sizeof (colecaoLivros[0]);
     std::cout << "tamanho da colecao biblioteca: " << tamanhoColecaoLivros << std::endl;
 
 
     std::cout << "imprimindo valores: " << colecaoLivros[0].getIsbn() << std::endl;
     std::cout << "imprimindo valores21: " << colecaoLivros[1].getIsbn() << std::endl;
-    std::cout << "imprimindo valores21: " << colecaoLivros[2].getIsbn() << std::endl;
+    std::cout << "imprimindo valores21: " << colecaoLivros[2].getIsbn() << std::endl;*/
 
 
     return 0;
