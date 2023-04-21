@@ -11,6 +11,7 @@
 #include "ContextoLivroAcao.h"
 #include "InserirLivroAction.h"
 #include "MostrarLivrosAction.h"
+#include "PesquisarLivroAction.h"
 
 
 using namespace std;
@@ -104,6 +105,10 @@ int main()
             acaoContext->executaLivroAction(colecaoLivros, posicao);
             break;
         case 2:
+            acaoContext->setLivroAcao(new PesquisarLivroAction());
+            acaoContext->executaLivroAction(colecaoLivros, posicao);
+            break;
+        case 3:
             acaoContext->setLivroAcao(new MostrarLivrosAction());
             acaoContext->executaLivroAction(colecaoLivros, posicao);
             break;

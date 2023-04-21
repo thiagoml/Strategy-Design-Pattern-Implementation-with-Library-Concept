@@ -165,6 +165,7 @@
     <ClCompile Include="MostrarLivros.cpp" />
     <ClCompile Include="MostrarLivrosAction.cpp" />
     <ClCompile Include="PesquisarLivro.cpp" />
+    <ClCompile Include="PesquisarLivroAction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AtualizarLivro.h" />
@@ -177,6 +178,7 @@
     <ClInclude Include="MostrarLivros.h" />
     <ClInclude Include="MostrarLivrosAction.h" />
     <ClInclude Include="PesquisarLivro.h" />
+    <ClInclude Include="PesquisarLivroAction.h" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="livros.txt" />

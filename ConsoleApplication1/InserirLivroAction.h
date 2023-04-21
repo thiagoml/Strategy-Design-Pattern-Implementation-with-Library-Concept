@@ -12,10 +12,6 @@ namespace BibliotecaLivros
         // exibe console para cadastro de livro
         void cadastraLivrosUsuario();
     public:
-
-        
-        
-        // Livro* recuperaCopiaLivros();
         void acao (Livro* colecaoLivros, int &posicao) override;
         Livro* acao (vector<Livro>& colecaoLivros) override;
     };
