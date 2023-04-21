@@ -158,6 +158,7 @@
     <ClCompile Include="AtualizarLivroAction.cpp" />
     <ClCompile Include="BibliotecaJP.cpp" />
     <ClCompile Include="ContextoLivroAcao.cpp" />
+    <ClCompile Include="ExportarLivroAction.cpp" />
     <ClCompile Include="ExportarLivros.cpp" />
     <ClCompile Include="InserirLivro.cpp" />
     <ClCompile Include="InserirLivroAction.cpp" />
@@ -172,6 +173,7 @@
     <ClInclude Include="AtualizarLivro.h" />
     <ClInclude Include="AtualizarLivroAction.h" />
     <ClInclude Include="ContextoLivroAcao.h" />
+    <ClInclude Include="ExportarLivroAction.h" />
     <ClInclude Include="ExportarLivros.h" />
     <ClInclude Include="InserirLivro.h" />
     <ClInclude Include="InserirLivroAction.h" />

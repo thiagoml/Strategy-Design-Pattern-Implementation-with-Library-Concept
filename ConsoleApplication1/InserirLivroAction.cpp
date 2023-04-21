@@ -31,7 +31,7 @@ namespace BibliotecaLivros
         std::cout << "Digite o formato do livro: ";
         std::getline(std::cin, formato);
 
-        std::cout << "Digite o ano de publicacao do livro: ";
+        std::cout << "Digite o ano de publicação do livro: ";
         std::cin >> ano;
     }
 

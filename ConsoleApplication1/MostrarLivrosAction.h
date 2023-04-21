@@ -8,7 +8,6 @@ namespace BibliotecaLivros
     {
     public:
         MostrarLivrosAction();
-        ~MostrarLivrosAction();
 
         void acao (Livro* colecaoLivros, int &posicao) override;
     };

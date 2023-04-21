@@ -5,10 +5,7 @@ namespace BibliotecaLivros
     MostrarLivrosAction::MostrarLivrosAction()
     {
     }
-
-    MostrarLivrosAction::~MostrarLivrosAction()
-    {
-    }
+    
 
     void MostrarLivrosAction::acao(Livro* livros, int& numLivros)
     {

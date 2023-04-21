@@ -10,6 +10,7 @@
 #include "AtualizarLivroAction.h"
 #include "ExportarLivros.h"
 #include "ContextoLivroAcao.h"
+#include "ExportarLivroAction.h"
 #include "InserirLivroAction.h"
 #include "MostrarLivrosAction.h"
 #include "PesquisarLivroAction.h"
@@ -17,7 +18,6 @@
 
 using namespace std;
 using namespace BibliotecaLivros;
-
 
 void exibeMenuOpcoes()
 {
@@ -29,11 +29,12 @@ void exibeMenuOpcoes()
     std::cout << "4 - Atualizar dados de um livro" << std::endl;
     std::cout << "5 - Exportar dados dos livros para um arquivo" << std::endl;
     std::cout << "6 - Sair" << std::endl;
-    std::cout << "Opcao escolhida: " << std::endl;
 }
 
 int main()
 {
+    setlocale(LC_ALL, "pt_BR.UTF-8");
+
     // Livro* livros[MAX_LIVROS];
     // int numLivros = 0;
 
@@ -104,6 +105,7 @@ int main()
 
     while (!(std::cin >> opcao) || opcao != 0)
     {
+        std::cout << "Opção escolhida: " << opcao << std::endl;
         switch (opcao)
         {
         case 1:
@@ -120,6 +122,10 @@ int main()
             break;
         case 4:
             acaoContext->setLivroAcao(new AtualizarLivroAction());
+            acaoContext->executaLivroAction(colecaoLivros, posicao);
+            break;
+        case 5:
+            acaoContext->setLivroAcao(new ExportarLivroAction());
             acaoContext->executaLivroAction(colecaoLivros, posicao);
             break;
         case 6:
