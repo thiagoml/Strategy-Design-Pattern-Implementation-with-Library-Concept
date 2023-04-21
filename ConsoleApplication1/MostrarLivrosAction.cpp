@@ -2,13 +2,10 @@
 
 namespace BibliotecaLivros
 {
-    MostrarLivrosAction::MostrarLivrosAction()
-    {
-    }
-    
 
     void MostrarLivrosAction::acao(Livro* livros, int& numLivros)
     {
+        
         for (int i = 0; i < numLivros; i++)
         {
             std::cout << "Livro " << i + 1 << ":" << std::endl;

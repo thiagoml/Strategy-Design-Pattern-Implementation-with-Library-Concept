@@ -4,9 +4,6 @@
 
 namespace BibliotecaLivros
 {
-    AtualizarLivroAction::AtualizarLivroAction()
-    {
-    }
 
     void AtualizarLivroAction::acao(Livro* livros, int& numLivros)
     {
@@ -32,7 +29,7 @@ namespace BibliotecaLivros
                 cout << "Digite o formato do livro: ";
                 std::getline(std::cin, formato);
 
-                cout << "Digite o ano de publicação do livro: ";
+                cout << "Digite o ano de publicacao do livro: ";
                 cin >> ano;
                 cin.ignore();
                 
@@ -42,9 +39,12 @@ namespace BibliotecaLivros
                 livros[i].setFormato(formato);
                 livros[i].setAno(ano);
                 
-                cout << "Livro atualizado com sucesso!" << endl;
+                std:: cout << "Livro atualizado com sucesso!" << std::endl;
                 return;
             }
         }
+    std::cout << "Livro nao encontrado" << std:: endl;
+
+        
     }
 }

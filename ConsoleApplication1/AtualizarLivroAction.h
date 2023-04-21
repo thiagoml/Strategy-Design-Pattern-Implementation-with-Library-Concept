@@ -6,7 +6,7 @@ namespace BibliotecaLivros
     class AtualizarLivroAction : public BibliotecaLivros::Livro
     {
     public:
-        AtualizarLivroAction();
+        AtualizarLivroAction() = default;
         void acao (Livro* colecaoLivros, int &numLivros) override;
     };
 }

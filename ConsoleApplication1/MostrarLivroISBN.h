@@ -15,6 +15,7 @@ namespace BibliotecaLivros
     class MostrarLivroISBN : public Livro
     {
     public:
+        MostrarLivroISBN() = default;
         static void mostrarLivroISBN(Livro* livros[], int numLivros);
     };
 }

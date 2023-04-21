@@ -7,7 +7,7 @@ namespace BibliotecaLivros
     class MostrarLivrosAction : public BibliotecaLivros::Livro
     {
     public:
-        MostrarLivrosAction();
+        MostrarLivrosAction() = default;
 
         void acao (Livro* colecaoLivros, int &posicao) override;
     };

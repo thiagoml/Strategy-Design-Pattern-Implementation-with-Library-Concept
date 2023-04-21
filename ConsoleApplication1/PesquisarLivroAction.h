@@ -6,7 +6,7 @@ namespace BibliotecaLivros
     class PesquisarLivroAction : public BibliotecaLivros::Livro
     {
     public:
-        PesquisarLivroAction();
+        PesquisarLivroAction() = default;
         void acao (Livro* colecaoLivros, int &numLivros) override;
     };
 }

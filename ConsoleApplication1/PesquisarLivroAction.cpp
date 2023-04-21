@@ -4,9 +4,6 @@
 
 namespace BibliotecaLivros
 {
-    PesquisarLivroAction::PesquisarLivroAction()
-    {
-    }
 
     void PesquisarLivroAction::acao(Livro* livros, int& numLivros)
     {
@@ -23,7 +20,7 @@ namespace BibliotecaLivros
                 std::cout << "Editora: " << livros[i].getEditora() << std::endl;
                 std::cout << "Categoria: " << livros[i].getCategoria() << std::endl;
                 std::cout << "Formato: " << livros[i].getFormato() << std::endl;
-                std::cout << "Ano de publicação: " << livros[i].getAno() << std::endl;
+                std::cout << "Ano de publicação " << livros[i].getAno() << std::endl;
                 return;
             }
         }

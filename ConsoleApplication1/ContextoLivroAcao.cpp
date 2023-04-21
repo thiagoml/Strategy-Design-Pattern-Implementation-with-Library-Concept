@@ -3,8 +3,10 @@
 
 namespace BibliotecaLivros
 {
-    ContextoLivroAcao::ContextoLivroAcao()
+    ContextoLivroAcao::~ContextoLivroAcao()
     {
+        std:: cout << "Limpando memoria do meu controlados de contexto de acoes de livro" << std:: endl;
+        delete this->livro;
     }
 
     ContextoLivroAcao::ContextoLivroAcao(BibliotecaLivros::Livro* livroAcao)

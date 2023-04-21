@@ -5,13 +5,14 @@ namespace BibliotecaLivros
 {
     class InserirLivroAction : public BibliotecaLivros::Livro
     {
-    public:
-        InserirLivroAction() = default;
-
+        
     private:
         // exibe console para cadastro de livro
         void cadastraLivrosUsuario();
+        
     public:
+        InserirLivroAction()=default;
+        ~InserirLivroAction();
         void acao (Livro* colecaoLivros, int &posicao) override;
         Livro* acao (vector<Livro>& colecaoLivros) override;
     };

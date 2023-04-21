@@ -154,38 +154,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AtualizarLivro.cpp" />
     <ClCompile Include="AtualizarLivroAction.cpp" />
     <ClCompile Include="BibliotecaJP.cpp" />
     <ClCompile Include="ContextoLivroAcao.cpp" />
     <ClCompile Include="ExportarLivroAction.cpp" />
-    <ClCompile Include="ExportarLivros.cpp" />
-    <ClCompile Include="InserirLivro.cpp" />
     <ClCompile Include="InserirLivroAction.cpp" />
     <ClCompile Include="Livro.cpp" />
     <ClCompile Include="MostrarLivroISBN.cpp" />
-    <ClCompile Include="MostrarLivros.cpp" />
     <ClCompile Include="MostrarLivrosAction.cpp" />
-    <ClCompile Include="PesquisarLivro.cpp" />
     <ClCompile Include="PesquisarLivroAction.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AtualizarLivro.h" />
     <ClInclude Include="AtualizarLivroAction.h" />
     <ClInclude Include="ContextoLivroAcao.h" />
     <ClInclude Include="ExportarLivroAction.h" />
-    <ClInclude Include="ExportarLivros.h" />
-    <ClInclude Include="InserirLivro.h" />
     <ClInclude Include="InserirLivroAction.h" />
     <ClInclude Include="Livro.h" />
     <ClInclude Include="MostrarLivroISBN.h" />
-    <ClInclude Include="MostrarLivros.h" />
     <ClInclude Include="MostrarLivrosAction.h" />
-    <ClInclude Include="PesquisarLivro.h" />
     <ClInclude Include="PesquisarLivroAction.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="livros.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
