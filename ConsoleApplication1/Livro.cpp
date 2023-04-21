@@ -11,7 +11,7 @@ namespace BibliotecaLivros
 {
     Livro::~Livro()
     {
-        std::cout << "destructor livro";
+       // std::cout << "destructor livro";
     }
     Livro::Livro()
     {
@@ -89,7 +89,17 @@ namespace BibliotecaLivros
         return ano;
     }
 
-    Livro* Livro::acao(Livro* colecaoLivros)
+    Livro* Livro::recuperaLivro()
+    {
+        return this;
+    }
+
+    void Livro::acao(Livro* colecaoLivros, int& posicao)
+    {
+    }
+
+
+    Livro* Livro::acao(vector<Livro>& vector)
     {
         return nullptr;
     }

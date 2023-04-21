@@ -3,6 +3,10 @@
 
 namespace BibliotecaLivros
 {
+    ContextoLivroAcao::ContextoLivroAcao()
+    {
+    }
+
     ContextoLivroAcao::ContextoLivroAcao(BibliotecaLivros::Livro* livroAcao)
     {
         livro = livroAcao;
@@ -13,9 +17,13 @@ namespace BibliotecaLivros
         livro = livroAcao;
     }
 
-    void ContextoLivroAcao::executaLivroAction(Livro* colecaoLivros)
+    void ContextoLivroAcao::executaLivroAction(Livro* colecaoLivros, int &posicao)
+    {
+        livro->acao(colecaoLivros, posicao);
+    }
+
+    void ContextoLivroAcao::executaLivroAction(vector<Livro>& colecaoLivros)
     {
         livro->acao(colecaoLivros);
     }
-    
 }

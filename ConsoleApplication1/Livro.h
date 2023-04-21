@@ -2,6 +2,7 @@
 #define LIVRO_H_
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -77,8 +78,8 @@ namespace BibliotecaLivros
         std::string getFormato() const;
         int getAno() const;
 
-        virtual Livro* acao (Livro* colecaoLivros);
-
-        
+        Livro* recuperaLivro();
+        virtual void acao (Livro* colecaoLivros, int &posicao);
+        virtual Livro* acao (vector<Livro>& colecaoLivros);
     };
 }

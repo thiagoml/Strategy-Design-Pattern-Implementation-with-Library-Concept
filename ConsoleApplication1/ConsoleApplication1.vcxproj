@@ -163,6 +163,7 @@
     <ClCompile Include="Livro.cpp" />
     <ClCompile Include="MostrarLivroISBN.cpp" />
     <ClCompile Include="MostrarLivros.cpp" />
+    <ClCompile Include="MostrarLivrosAction.cpp" />
     <ClCompile Include="PesquisarLivro.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +175,7 @@
     <ClInclude Include="Livro.h" />
     <ClInclude Include="MostrarLivroISBN.h" />
     <ClInclude Include="MostrarLivros.h" />
+    <ClInclude Include="MostrarLivrosAction.h" />
     <ClInclude Include="PesquisarLivro.h" />
   </ItemGroup>
   <ItemGroup>
