@@ -160,7 +160,6 @@
     <ClCompile Include="ExportarLivroAction.cpp" />
     <ClCompile Include="InserirLivroAction.cpp" />
     <ClCompile Include="Livro.cpp" />
-    <ClCompile Include="MostrarLivroISBN.cpp" />
     <ClCompile Include="MostrarLivrosAction.cpp" />
     <ClCompile Include="PesquisarLivroAction.cpp" />
   </ItemGroup>
@@ -170,7 +169,6 @@
     <ClInclude Include="ExportarLivroAction.h" />
     <ClInclude Include="InserirLivroAction.h" />
     <ClInclude Include="Livro.h" />
-    <ClInclude Include="MostrarLivroISBN.h" />
     <ClInclude Include="MostrarLivrosAction.h" />
     <ClInclude Include="PesquisarLivroAction.h" />
   </ItemGroup>

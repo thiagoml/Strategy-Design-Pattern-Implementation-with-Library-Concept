@@ -5,12 +5,7 @@
 
 #include <iostream>
 #include "Livro.h"
-#include "InserirLivro.h"
-#include "PesquisarLivro.h"
-#include "MostrarLivros.h"
-#include "AtualizarLivro.h"
 #include "AtualizarLivroAction.h"
-#include "ExportarLivros.h"
 #include "ContextoLivroAcao.h"
 #include "ExportarLivroAction.h"
 #include "InserirLivroAction.h"
