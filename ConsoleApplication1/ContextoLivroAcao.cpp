@@ -1,5 +1,4 @@
 ﻿#include "ContextoLivroAcao.h"
-#include <vcruntime.h>
 
 namespace BibliotecaLivros
 {
@@ -22,10 +21,5 @@ namespace BibliotecaLivros
     void ContextoLivroAcao::executaLivroAction(Livro* colecaoLivros, int &posicao)
     {
         livro->acao(colecaoLivros, posicao);
-    }
-
-    void ContextoLivroAcao::executaLivroAction(vector<Livro>& colecaoLivros)
-    {
-        livro->acao(colecaoLivros);
     }
 }

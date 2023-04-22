@@ -42,8 +42,8 @@ namespace BibliotecaLivros
         std::string getFormato() const;
         int getAno() const;
 
-        Livro* recuperaLivro();
+        // Livro* recuperaLivro();
         virtual void acao (Livro* colecaoLivros, int &posicao);
-        virtual Livro* acao (vector<Livro>& colecaoLivros);
+        // virtual Livro* acao (vector<Livro>& colecaoLivros);
     };
 }

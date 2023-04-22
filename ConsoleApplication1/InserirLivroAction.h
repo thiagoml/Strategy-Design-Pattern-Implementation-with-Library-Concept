@@ -14,6 +14,5 @@ namespace BibliotecaLivros
         InserirLivroAction()=default;
         ~InserirLivroAction();
         void acao (Livro* colecaoLivros, int &posicao) override;
-        Livro* acao (vector<Livro>& colecaoLivros) override;
     };
 }

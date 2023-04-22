@@ -28,16 +28,9 @@ namespace BibliotecaLivros
     void InserirLivroAction::acao(Livro* colecaoLivros, int &posicao)
     {
         cadastraLivrosUsuario();
-        colecaoLivros[posicao] = *this->recuperaLivro();
+        colecaoLivros[posicao] = *this;
         posicao++;
 
     }
-
-    Livro* InserirLivroAction::acao(vector<Livro>& colecaoLivros)
-    {
-        cadastraLivrosUsuario();
-        colecaoLivros.push_back( *this->recuperaLivro());
-        std:: cout << "quantidade de livros :" << colecaoLivros.size() << " " << endl;
-        return nullptr;
-    }
+    
 }

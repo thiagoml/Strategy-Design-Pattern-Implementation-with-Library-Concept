@@ -89,18 +89,13 @@ namespace BibliotecaLivros
         return ano;
     }
 
-    Livro* Livro::recuperaLivro()
-    {
-        return this;
-    }
+    // Livro* Livro::recuperaLivro()
+    // {
+    //     return this;
+    // }
 
     void Livro::acao(Livro* colecaoLivros, int& posicao)
     {
     }
-
-
-    Livro* Livro::acao(vector<Livro>& vector)
-    {
-        return nullptr;
-    }
+    
 }
